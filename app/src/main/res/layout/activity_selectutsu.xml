@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".selectutsu">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#00ff73"
+        android:text="@string/utsu_mondai"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ustu_hantei11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/utsu_hantei12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ustu_hantei11" />
+
+    <TextView
+        android:id="@+id/utsu_hantei13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei12" />
+
+    <TextView
+        android:id="@+id/utsu_hantei14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei13" />
+
+    <TextView
+        android:id="@+id/usu_hantei15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/utsu_hantei15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei14" />
+
+    <TextView
+        android:id="@+id/utsu_hantei16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usu_hantei15" />
+
+    <TextView
+        android:id="@+id/utsu_hantei17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei16" />
+
+    <TextView
+        android:id="@+id/utsu_hantei18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei17" />
+
+    <TextView
+        android:id="@+id/utsu_hantei19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/utsu_hantei19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei18" />
+
+    <TextView
+        android:id="@+id/utsu_hantei20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/utsu_hantei20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei19" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onBackButtonClick"
+        android:text="@string/back"
+        app:layout_constraintEnd_toStartOf="@+id/clear2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei20" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickClear"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toStartOf="@+id/hantei"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei20" />
+
+    <Button
+        android:id="@+id/hantei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/hantei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/clear2"
+        app:layout_constraintTop_toBottomOf="@+id/utsu_hantei20" />
+
+    <RadioGroup
+        android:id="@+id/radio11"
+        android:layout_width="155dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/ustu_hantei11"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio11y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio11n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio12"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio11"
+        app:layout_constraintTop_toBottomOf="@+id/radio11"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio2y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio12n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio13"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio12"
+        app:layout_constraintTop_toBottomOf="@+id/radio12"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio3y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio13n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio14"
+        android:layout_width="145dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio13"
+        app:layout_constraintTop_toBottomOf="@+id/radio13"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio14y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio14n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio15"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio14"
+        app:layout_constraintTop_toBottomOf="@+id/radio14"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio15y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio15n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio16"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio15"
+        app:layout_constraintTop_toBottomOf="@+id/radio15"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio16y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio16n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio17"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio16"
+        app:layout_constraintTop_toBottomOf="@+id/radio16"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio17y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio17n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio18"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio17"
+        app:layout_constraintTop_toBottomOf="@+id/radio17"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio18y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio18n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio19"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio18"
+        app:layout_constraintTop_toBottomOf="@+id/radio18"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio19y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio19n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio20"
+        android:layout_width="145dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio19"
+        app:layout_constraintTop_toBottomOf="@+id/radio19"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio20y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio20n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

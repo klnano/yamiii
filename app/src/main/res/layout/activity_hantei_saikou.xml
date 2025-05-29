@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hanteiSaikou"
+    android:background="#91FF90">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:text="@string/attention"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backFirst3" />
+
+    <TextView
+        android:id="@+id/your3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/your"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tensuu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="37dp"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="@+id/your3"
+        app:layout_constraintTop_toBottomOf="@+id/your3"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/point3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/point"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tensuu3"
+        app:layout_constraintStart_toEndOf="@+id/tensuu3"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/hanteikekka3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/hantei_kekka3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tensuu3"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/setsumei3"
+        android:layout_width="375dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:text="@string/setsumei3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hanteikekka3" />
+
+    <Button
+        android:id="@+id/backFirst3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickBack"
+        android:text="@string/back_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearHospital" />
+
+    <Button
+        android:id="@+id/nearHospital"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:onClick="nearHospital"
+        android:text="@string/near_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setsumei3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
